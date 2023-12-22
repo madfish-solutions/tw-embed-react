@@ -22,7 +22,7 @@ module.exports = {
 		'node/no-missing-require': 'off',
 		'node/shebang': 'off',
 		'@typescript-eslint/no-use-before-define': 'off',
-		'brace-style': ['warn', 'allman', { allowSingleLine: true }],
+		'brace-style': ['warn', '1tbs', { allowSingleLine: true }],
 		quotes: ['warn', 'double', { avoidEscape: true }],
 		semi: ['warn', "never"],
 		'node/no-unpublished-import': 'off',

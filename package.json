@@ -1,7 +1,7 @@
 {
-	"name": "@slise/embed-react",
+	"name": "@temple-wallet/slise-embed-react",
 	"version": "1.0.4",
-	"description": "React component to embed Slise into your website",
+	"description": "React component to embed Slise into your website or web extension",
 	"main": "./lib/index.js",
 	"files": [
 		"lib/**/*"
@@ -19,10 +19,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/slisexyz/embed-react"
+		"url": "git+https://github.com/madfish-solutions/tw-embed-react"
 	},
 	"license": "MIT",
-	"author": "Slise Inc.",
+	"author": "Madfish Solutions",
 	"private": false,
 	"publishConfig": {
 		"access": "public"
@@ -42,9 +42,9 @@
 		"codecov"
 	],
 	"bugs": {
-		"url": "https://github.com/slisexyz/embed-react/issues"
+		"url": "https://github.com/madfish-solutions/tw-embed-react/issues"
 	},
-	"homepage": "https://github.com/slisexyz/embed-react#readme",
+	"homepage": "https://github.com/madfish-solutions/tw-embed-react#readme",
 	"dependencies": {
 		"react-script-hook": "^1.7.2"
 	},
