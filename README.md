@@ -1,29 +1,29 @@
-# @slise/embed-react
+# @temple-wallet/slise-embed-react
 
-[![npm package](https://img.shields.io/npm/v/@slise/embed-react)](https://www.npmjs.com/package/@slise/embed-react)
-[![Build Status](https://github.com/slisexyz/embed-react/actions/workflows/release.yml/badge.svg)](https://github.com/slisexyz/embed-react/actions/workflows/release.yml)
-[![Downloads](https://img.shields.io/npm/dt/@slise/embed-react)](https://www.npmtrends.com/@slise/embed-react)
-[![Issues](https://img.shields.io/github/issues/slisexyz/embed-react)](https://github.com/slisexyz/embed-react/issues)
-[![Code Coverage](https://codecov.io/gh/slisexyz/embed-react/branch/main/graph/badge.svg)](https://codecov.io/gh/slisexyz/embed-react)
+[![npm package](https://img.shields.io/npm/v/@temple-wallet/slise-embed-react)](https://www.npmjs.com/package/@temple-wallet/slise-embed-react)
+[![Build Status](https://github.com/madfish-solutions/tw-embed-react/actions/workflows/release.yml/badge.svg)](https://github.com/madfish-solutions/tw-embed-react/actions/workflows/release.yml)
+[![Downloads](https://img.shields.io/npm/dt/@temple-wallet/slise-embed-react)](https://www.npmtrends.com/@temple-wallet/slise-embed-react)
+[![Issues](https://img.shields.io/github/issues/madfish-solutions/tw-embed-react)](https://github.com/madfish-solutions/tw-embed-react/issues)
+[![Code Coverage](https://codecov.io/gh/madfish-solutions/tw-embed-react/branch/main/graph/badge.svg)](https://codecov.io/gh/madfish-solutions/tw-embed-react)
 [![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-> React component to embed Slise into your website
+> React component to embed Slise into your website or web extension
 
 ## Install
 
 ```bash
-npm install @slise/embed-react
+npm install @temple-wallet/slise-embed-react
 ```
 or
 ```bash
-yarn add @slise/embed-react
+yarn add @temple-wallet/slise-embed-react
 ```
 
 ## Usage
 
 ```ts
-import { SliseAd } from '@slise/embed-react'
+import { SliseAd } from '@temple-wallet/slise-embed-react'
 
 export const App: React.FC = () => {
     return (
@@ -61,6 +61,24 @@ Publisher ID (provided by Slise).
 Type: `string`
 
 Comma-separated list of the ad formats that you want to be shown in this slot.
+
+#### requireLocalScript
+
+Type: `() => void`
+
+If the function is specified, it will be called in case script loading from v1.slise.xyz fails in order to initialize ads.
+
+#### onError
+
+Type: `(error: Error) => void`
+
+This callback is called if loading ads fails.
+
+#### onLoading
+
+Type: `(loading: boolean) => void`
+
+This callback is called after ads start or finish loading.
 
 #### style?
 
